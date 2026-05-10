@@ -585,6 +585,7 @@ body {
   margin-bottom: 8px;
   background: linear-gradient(135deg, var(--text-primary), var(--accent-2));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
