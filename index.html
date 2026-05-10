@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NexaBot — An intelligent AI-powered FAQ Chatbot built with NLP techniques for CodeAlpha Internship Task 2. Ask questions and get instant smart answers.">
+  <title>NexaBot — AI FAQ Chatbot | CodeAlpha</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+</head>
+<body>
+
+  <!-- Animated Background -->
+  <div class="bg-canvas">
+    <div class="bg-orb"></div>
+    <div class="bg-orb"></div>
+    <div class="bg-orb"></div>
+    <div class="bg-grid"></div>
+  </div>
+
+  <!-- Main App -->
+  <div class="app-container">
+
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="header-brand">
+        <div class="brand-icon">🤖</div>
+        <div class="brand-text">
+          <h1>NexaBot</h1>
+          <span>AI-Powered FAQ Assistant</span>
+        </div>
+      </div>
+      <div class="header-status" id="botStatus">
+        <span class="status-dot"></span>
+        Online
+      </div>
+      <div class="header-actions">
+        <button class="header-btn" id="btnFaqList" title="Browse FAQs" aria-label="Browse FAQs">📋</button>
+        <button class="header-btn" id="btnClearChat" title="Clear Chat" aria-label="Clear Chat">🗑️</button>
+      </div>
+    </header>
+
+    <!-- Chat Wrapper -->
+    <div class="chat-wrapper">
+      <!-- Chat Messages -->
+      <div class="chat-messages" id="chatMessages">
+
+        <!-- Welcome Screen -->
+        <div class="welcome" id="welcomeScreen">
+          <div class="welcome-icon">🤖</div>
+          <h2>Hi, I'm NexaBot!</h2>
+          <p>Your intelligent FAQ assistant powered by NLP. Ask me anything about CodeAlpha, our internship programs, AI, or technology topics.</p>
+          <div class="welcome-grid">
+            <div class="welcome-card" data-question="What is CodeAlpha?">
+              <div class="card-icon">🏢</div>
+              <div class="card-title">About CodeAlpha</div>
+              <div class="card-desc">Learn about the company</div>
+            </div>
+            <div class="welcome-card" data-question="What are the internship perks?">
+              <div class="card-icon">🎁</div>
+              <div class="card-title">Internship Perks</div>
+              <div class="card-desc">Discover what you get</div>
+            </div>
+            <div class="welcome-card" data-question="What AI tasks are available?">
+              <div class="card-icon">🤖</div>
+              <div class="card-title">AI Tasks</div>
+              <div class="card-desc">Explore available projects</div>
+            </div>
+            <div class="welcome-card" data-question="How do I submit my project?">
+              <div class="card-icon">📤</div>
+              <div class="card-title">Submission Guide</div>
+              <div class="card-desc">Step-by-step instructions</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Replies -->
+      <div class="quick-replies" id="quickReplies"></div>
+
+      <!-- Input Area -->
+      <div class="input-area">
+        <div class="input-wrapper">
+          <textarea id="userInput" placeholder="Ask me anything..." rows="1" aria-label="Type your message"></textarea>
+        </div>
+        <button class="send-btn" id="sendBtn" title="Send Message" aria-label="Send">➤</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FAQ Sidebar -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h3>📚 FAQ Library</h3>
+      <button class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">✕</button>
+    </div>
+    <div class="sidebar-body" id="sidebarBody">
+      <!-- Populated by JS -->
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
