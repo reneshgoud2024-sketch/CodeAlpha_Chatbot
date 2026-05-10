@@ -1,6 +1,5 @@
 # NexaBot — AI FAQ Chatbot 🤖
 
-# NexaBot — AI FAQ Chatbot 🤖
 
 🔗 **Live Demo:** [Click here to try NexaBot](https://reneshgoud2024-sketch.github.io/CodeAlpha_Chatbot/)
 
