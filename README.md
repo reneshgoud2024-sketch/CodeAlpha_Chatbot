@@ -1,5 +1,11 @@
 # NexaBot — AI FAQ Chatbot 🤖
 
+# NexaBot — AI FAQ Chatbot 🤖
+
+🔗 **Live Demo:** [Click here to try NexaBot](https://reneshgoud2024-sketch.github.io/CodeAlpha_Chatbot/)
+
+
+
 This repository contains the source code for **Task 2: Chatbot for FAQs**, developed as part of the Artificial Intelligence Internship at **CodeAlpha**. 
 
 NexaBot is an intelligent, modern, and highly interactive FAQ chatbot built entirely with web technologies (HTML, CSS, JavaScript). It uses Natural Language Processing (NLP) techniques, specifically **TF-IDF vectorization** and **Cosine Similarity**, to match user queries with the most relevant answers from a predefined knowledge base.
@@ -55,3 +61,6 @@ Since this project requires no backend or external APIs, you can run it instantl
 
 ---
 *Designed & Developed for the CodeAlpha Internship Program.*
+
+
+
